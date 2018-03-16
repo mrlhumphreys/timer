@@ -1,3 +1,8 @@
+body {
+  background-color: #202b31;
+  margin: 0;
+}
+
 #wrapper {
   display: flex;
   width: 100vw;
@@ -5,7 +10,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #202b31;
 }
 
 #time {

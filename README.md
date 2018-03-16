@@ -1,5 +1,9 @@
 # Timer
 
+## URL
+
+(Click Here)[https://mrlhumphreys.github.io/timer/public/]
+
 ## How to use
 
 1. Hold Space Bar to ready the timer.
