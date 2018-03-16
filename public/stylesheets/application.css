@@ -1,0 +1,24 @@
+#wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202b31;
+}
+
+#time {
+  display: block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 10em;
+  color: #73cfe6;
+}
+
+#time.ready {
+  color: #fbf7ae;
+}
+
+#time.running {
+  color: #cfe8d3;
+}
