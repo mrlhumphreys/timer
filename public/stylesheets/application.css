@@ -1,21 +1,80 @@
 body {
   background-color: #202b31;
   margin: 0;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 #wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#sidebar_toggle {
+  background-color: #e0e7ed;
+  color: #202b31;
+  text-decoration: none;
+  display: block;
+  font-size: 1.5em;
+  padding: 0.10em 0.5em 0.7em 0.4em;
+  height: 1em;
+  border-radius: 0 0 1em 0; 
+}
+
+#wrapper.show_sidebar #sidebar {
+  width: 25vw;
+}
+
+#wrapper.show_sidebar #sidebar * {
+  opacity: 1;
+}
+
+#wrapper.show_sidebar #timer {
+  width: 75vw;
+}
+
+#sidebar {
+  width: 0vw;
+  height: 100vh;
+  transition: width 0.5s ease;
+  background-color: #e0e7ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sidebar * {
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+
+#sidebar h2 {
+  margin-bottom: 0;
+}
+
+#times_list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#times_list li {
+  text-align: center;
+}
+
+#timer {
   display: flex;
   width: 100vw;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: width 0.5s ease;
 }
 
 #time {
   display: block;
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 10em;
+  font-size: 8em;
   color: #73cfe6;
 }
 
